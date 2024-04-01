@@ -157,6 +157,14 @@ func main() {
 3. 컴파일 및 설치: go install
 4. 실행: hello
 
-# [ ADD ]
+# [ Effective Go ]
 
--
+## Allocation
+
+### new
+
+특정 타입 T를 위해 새롭게 할당된 제로 값의 포인터를 린턴한다. (제로 저장 공간을 할당.)
+
+### make
+
+slice, maps, channels에서만 오직 사용할 수 있으며, 특정 타입 T에 대한(not \*T) 초기화된 값을 리턴해.
